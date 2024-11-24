@@ -1,0 +1,144 @@
+/* Container */
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Form Styling */
+.form-style {
+  margin: 20px auto;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input {
+  padding: 10px;
+  border: 2px solid #6c757d;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(45deg, #007bff, #00c6ff);
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+button:hover {
+  background: linear-gradient(45deg, #0056b3, #0080ff);
+}
+
+/* Book Card */
+.book-card {
+  margin-top: 20px;
+  padding: 20px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 10px;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
+.book-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.book-card p {
+  margin: 5px 0;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Error Message */
+.error-message {
+  margin-top: 20px;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+/* Container */
+.container {
+  text-align: center;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+/* Book List */
+.book-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.book-item {
+  margin-bottom: 20px;
+}
+
+.book-card {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.book-card:hover {
+  transform: scale(1.05);
+}
+
+.book-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.book-card p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.book-card strong {
+  color: #ffeb3b;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .book-card {
+    padding: 15px;
+  }
+
+  .book-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .book-card p {
+    font-size: 1rem;
+  }
+}
+/* Error Message */
+.error-message {
+  margin-top: 20px;
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
