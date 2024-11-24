@@ -17,7 +17,7 @@ const Book = mongoose.model('Book', bookSchema);
 
 app.use(cors(
   {
-      origin:[],
+      origin:["book-management-zeta.vercel.app"],
       methods:["POST","GET"],
       credentials:true
   }
