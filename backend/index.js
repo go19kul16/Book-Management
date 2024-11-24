@@ -28,26 +28,26 @@ app.use(cors(
 app.use(express.json());
 
 // Add Book
-app.post('book-management-zeta.vercel.app/books', async (req, res) => {
+app.post('book-management-backend0.vercel.app/books', async (req, res) => {
   const book = new Book(req.body);
   await book.save();
   res.send(book);
 });
 
 // Search Book by ISBN
-app.get('book-management-zeta.vercel.app/books/:isbn', async (req, res) => {
+app.get('book-management-backend0.vercel.app/books/:isbn', async (req, res) => {
   const book = await Book.findOne({ ISBN: req.params.isbn });
   res.send(book || { error: 'Book not found' });
 });
 
 // Delete Book by ISBN
-app.delete('book-management-zeta.vercel.app/books/:isbn', async (req, res) => {
+app.delete('book-management-backend0.vercel.app/books/:isbn', async (req, res) => {
   await Book.findOneAndDelete({ ISBN: req.params.isbn });
   res.send({ message: 'Book deleted' });
 });
 
 // Get all books
-app.get('book-management-zeta.vercel.app/books', async (req, res) => {
+app.get('book-management-backend0.vercel.app/books', async (req, res) => {
   const books = await Book.find();
   res.send(books);
 });
