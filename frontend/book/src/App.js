@@ -12,17 +12,17 @@ const App = () => (
     <div className="App-header">
       <h1>Library Management System</h1>
       <div>
-        <Link to="book-management-backend0.vercel.app/add">
+        <Link to="/add">
           <button className="add-btn">Add Book</button>
         </Link>
-        <Link to="book-management-backend0.vercel.app/search">
+        <Link to="/search">
           <button className="search-btn">Search Book</button>
         </Link>
         
-        <Link to="book-management-backend0.vercel.app/delete">
+        <Link to="/delete">
           <button className="delete-btn">Delete Book</button>
         </Link>
-        <Link to="book-management-backend0.vercel.app/display">
+        <Link to="/display">
           <button className="display-btn">Display All Books</button>
         </Link>
       </div>
