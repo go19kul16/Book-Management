@@ -8,7 +8,6 @@ import DisplayAllBooks from './components/DisplayAllBooks';
 import './App.css';
 
 
-axios.defaultsWithCredinals :true;
 const App = () => (
   <Router>
     <div className="App-header">
