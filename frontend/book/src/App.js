@@ -29,10 +29,10 @@ const App = () => (
       </div>
       <Routes>
         
-        <Route path="book-management-backend0.vercel.app/add" element={<AddBook />} />
-        <Route path="book-management-backend0.vercel.app/search" element={<SearchBook />} />
-        <Route path="book-management-backend0.vercel.app/delete" element={<DeleteBook />} />
-        <Route path="book-management-backend0.vercel.app/display" element={<DisplayAllBooks />} />
+        <Route path="/add" element={<AddBook />} />
+        <Route path="/search" element={<SearchBook />} />
+        <Route path="/delete" element={<DeleteBook />} />
+        <Route path="/display" element={<DisplayAllBooks />} />
       </Routes>
     </div>
   </Router>
